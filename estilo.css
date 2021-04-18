@@ -307,7 +307,7 @@ header .nav ul li a:hover{
     Sobre nosotros seccion
     ------------- */ 
 .about-section{
-    background-color: var(--dark-light);
+    background-color: red;
 }
 .about-text,
 .about-img{
