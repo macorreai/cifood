@@ -276,7 +276,7 @@ header .nav ul li a:hover{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url(images/home/burger.jpg);
+    background-image: url(images/home-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -448,9 +448,126 @@ Seccion testimonios
 -------------------*/ 
 .testimonials-section{
     background-color: var(--dark);
+    padding-bottom: 50px;
 }
 .testi-item{
     width: calc((100% / 3)- 30px);
     margin: 0 15px 30px;
-    border: 2px;
+    border: 2px solid var(--dark-light);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
 }
+.testi-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testi-author h3{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 0 3px;
+}
+.testi-author span{
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.testi-author img{
+    max-width: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--dark-light);
+    box-shadow: var(--shadow);
+    transition: border-color 0.5s ease;
+}
+.testi-item:hover .testi-author img{
+    border-color: var(--main-color);
+}
+.testi-item{
+    margin: 15px 0;
+}
+.testi-item .ratings i{
+    font-size: 16px;
+    color: var(--main-color);
+}
+/* -------------
+map
+-------------------*/ 
+
+
+.map-section{
+    background-color: var(--dark);
+    padding-bottom: 50px;
+}
+.map{
+    align-items: center;
+}
+.map-img{
+    position: relative;
+    align-items: center;
+}
+
+/*responsive*/
+
+@media(max-width: 991px){
+    .testi-item{
+        width: calc(50% -30px);
+    }
+    .map-section{
+        width: 50%;
+        margin-bottom: 75px;
+    }
+
+}
+@media(max-width: 767px){
+    .home-text h1{
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .menu-item,
+    .about-text, 
+    .bout-img{
+        width: 100%;
+    }
+    .menu-item:nth-last-of-type(2):after{
+        border-bottom: 2px dashed var(--dark-light);
+
+    }
+    .bout-img{
+        margin-top: 40px;
+        
+    }
+
+}
+@media(max-width: 757px){
+    .map-section{
+        width: 100%;
+        margin-bottom: 75px;
+    }
+
+}
+
+
+.btnContacto{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    color: rgb(53, 153, 53);
+    line-height: 1.5;
+    user-select: none;
+    border:none;
+}
+.btn-default{
+    border: 2px solid  rgb(53, 153, 53);
+}
+.btn-default:hover{
+    color: var(--white);
+    background-color:  rgb(53, 153, 53);
+}
+
